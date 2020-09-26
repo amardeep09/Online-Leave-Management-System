@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `leave_requests` (
   `days_requested` int(2) NOT NULL,
   `date_applied` date NOT NULL,
   `leave_status` varchar(30) NOT NULL DEFAULT 'Pending',
+  
   PRIMARY KEY (`staff_id`,`start_date`,`end_date`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -43,18 +44,7 @@ CREATE TABLE IF NOT EXISTS `leave_requests` (
 
 INSERT INTO `leave_requests` (`staff_id`, `leave_type`, `start_date`, `end_date`, `days_requested`, `date_applied`, `leave_status`) VALUES
 ('anuj@live.in', 'Weekend Leave', '2015-04-03', '2015-04-04', 2, '2015-04-23', 'Approved'),
-('anuj@live.in', 'Casual Leave', '2015-04-23', '2015-04-23', 1, '2015-04-23', 'Pending'),
-('anuj@live.in', 'Casual Leave', '2015-04-23', '2015-04-30', 8, '2015-04-23', 'Pending'),
-('anuj@live.in', 'Weekend Leave', '2015-04-25', '2015-04-25', 1, '2015-04-23', 'Approved'),
-('anuj@live.in', 'Sick Leave', '2015-06-13', '2015-06-18', 6, '2015-04-23', 'Approved'),
-('anuj@live.in', 'Weekend Leave', '2015-06-21', '2015-06-25', 5, '2015-04-23', 'Approved'),
-('jayantgope@yahoo.in', 'Weekend Leave', '2015-04-03', '2015-04-03', 1, '2015-04-23', 'Pending'),
-('jayantgope@yahoo.in', 'Sick Leave', '2015-04-11', '2015-04-11', 1, '2015-04-10', 'Pending'),
-('jayantgope@yahoo.in', 'Weekend Leave', '2015-04-17', '2015-04-17', 1, '2015-04-23', 'Pending'),
-('jayantgope@yahoo.in', 'Sick Leave', '2015-04-17', '2015-04-18', 2, '2015-04-10', 'Approved'),
-('jayantgope@yahoo.in', 'Weekend Leave', '2015-04-24', '2015-04-24', 1, '2015-04-23', 'Pending'),
-('jayantgope@yahoo.in', 'Weekend Leave', '2015-04-24', '2015-05-08', 15, '2015-04-23', 'Pending'),
-('jayantgope@yahoo.in', 'Casual Leave', '2015-08-08', '2015-08-30', 23, '2015-04-23', 'Pending');
+('jayantgope@yahoo.in', 'Weekend Leave', '2015-04-03', '2015-04-03', 1, '2015-04-23', 'Pending');
 
 -- --------------------------------------------------------
 
