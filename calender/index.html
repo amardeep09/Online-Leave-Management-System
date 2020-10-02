@@ -5,7 +5,7 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<title>MultiDatesPicker for jQuery UI</title>
 		<meta name="description" content="MDP is a little plugin that enables jQuery UI calendar to manage multiple dates.">
-		<meta name="keywords" content="Multiple Dates Picker, jQuery, jQuery UI, javascript, calendar, Luca Lauretta, dubrox">
+		<meta name="keywords" content="Multiple Dates Picker, jQuery, jQuery UI, javascript, calendar, Luca Lauretta,Online Leave Management, OnlineLeaveManagementSystem, dubrox">
 		<meta name="author" content="Luca Lauretta aka dubrox">
 		
 		<!-- loads jquery and jquery ui -->
@@ -480,7 +480,7 @@ $('#maxPicks').multiDatesPicker({
 							<pre class="code prettyprint">
 var date = new Date();
 $('#pickableRange').multiDatesPicker({
-	pickableRange: 7,
+	pickableRange: 8,
 	adjustRangeToDisabled: true,
 	addDisabledDates: [date.setDate(10), date.setDate(15)]
 });
@@ -508,7 +508,7 @@ $('#pickableRange').multiDatesPicker({
 							<pre class="code prettyprint">
 $('#simple-select-days-range').multiDatesPicker({
 	mode: 'daysRange',
-	autoselectRange: [0,5]
+	autoselectRange: [0,12]
 });</pre>
 						</div>
 					</li>
@@ -529,7 +529,7 @@ $('#simple-select-days-range').multiDatesPicker({
 var today = new Date();
 $('#simple-select-min-max').multiDatesPicker({
 	minDate: 0,
-	maxDate: 30
+	maxDate: 31
 });</pre>
 						</div>
 					</li>
@@ -566,7 +566,7 @@ var today = new Date();
 var y = today.getFullYear();
 $('#full-year').multiDatesPicker({
 	addDates: ['10/14/'+y, '02/19/'+y, '01/14/'+y, '11/16/'+y],
-	numberOfMonths: [3,4],
+	numberOfMonths: [3,6],
 	defaultDate: '1/1/'+y
 });</pre>
 						</div>
