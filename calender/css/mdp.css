@@ -17,16 +17,6 @@ h2 {
 	margin-top: 1em;
 }
 
-h4 {margin-bottom: 0;}
-
-p {margin-top: .3em;}
-
-code, pre.code {
-	font: 11px/13px monospace;
-	background-color: #FFC;
-	padding: 2px;
-	border: 1px dotted grey;
-}
 
 .clear {clear: both;}
 
